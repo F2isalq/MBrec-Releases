@@ -1,0 +1,30 @@
+name: Bug report / بلاغ مشكلة
+description: Something in MBrec doesn't work right. / شي في البرنامج ما يشتغل صح.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? / وش صار؟
+      description: What you did, what you expected, and what happened instead. / وش سويت، وش توقعت، ووش صار بدالها.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: MBrec version / نسخة البرنامج
+      description: Shown at the bottom of Settings. / تلقاها تحت في الإعدادات.
+      placeholder: "1.7.0"
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: Diagnostic report / تقرير التشخيص
+      description: Settings → Diagnostics → Copy diagnostic report, then paste it here. / الإعدادات ← Diagnostics ← Copy diagnostic report والصقه هنا.
+      render: text
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or video / صور أو فيديو
+      description: Optional — drag files here. / اختياري — اسحب الملفات هنا.
